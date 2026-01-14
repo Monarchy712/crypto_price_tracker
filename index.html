@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crypto Price Tracker</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Price Tracker</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">CryptoTrack</div>
-    <input
-      type="text"
-      class="search"
-      id="searchInput"
-      placeholder="Search cryptocurrency (Bitcoin, ETH, SOL...)"
-      autocomplete="off"
-    />
-  </header>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">CryptoTrack</div>
+        <input type="text" class="search" id="searchInput" placeholder="Search cryptocurrency (Bitcoin, ETH, SOL...)"
+            autocomplete="off" />
+    </header>
 
-  <!-- Market Overview -->
-  <section class="market-overview">
-    <div class="card">
-      <span class="label">Lookup</span>
-      <h2>Any Crypto</h2>
-      <span class="positive">Instant</span>
-    </div>
-
-    <div class="card">
-      <span class="label">Data Source</span>
-      <h2>CoinGecko</h2>
-      <span class="label">Live Market Data</span>
-    </div>
-
-    <div class="card">
-      <span class="label">Pricing</span>
-      <h2>Real-Time</h2>
-      <span class="positive">Updated</span>
-    </div>
-  </section>
-
-  <!-- Crypto Main Panel -->
-  <section class="crypto-panel">
-    <!-- Top Row -->
-    <div class="crypto-top">
-      <div class="crypto-cell coin">
-        <img
-          id="coinImage"
-          src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png"
-          alt="Coin"
-        />
-        <div>
-          <strong id="coinName">Bitcoin</strong>
-          <span id="coinSymbol">BTC</span>
+    <!-- Market Overview -->
+    <section class="market-overview">
+        <div class="card">
+            <span class="label">Lookup</span>
+            <h2>Any Crypto</h2>
+            <span class="positive">Instant</span>
         </div>
-      </div>
 
-      <div class="crypto-cell">
-        <span class="label">Price</span>
-        <strong id="coinPrice"></strong>
-      </div>
+        <div class="card">
+            <span class="label">Data Source</span>
+            <h2>CoinGecko</h2>
+            <span class="label">Live Market Data</span>
+        </div>
 
-      <div class="crypto-cell">
-        <span class="label">24h %</span>
-        <strong id="coinChange" class="positive"></strong>
-      </div>
-    </div>
+        <div class="card">
+            <span class="label">Pricing</span>
+            <h2>Real-Time</h2>
+            <span class="positive">Updated</span>
+        </div>
+    </section>
 
-    <!-- Bottom Row -->
-    <div class="crypto-bottom">
-      <div class="crypto-cell">
-        <span class="label">Market Cap</span>
-        <strong id="coinMarketCap"></strong>
-      </div>
+    <!-- Crypto Main Panel -->
+    <section class="crypto-panel">
+        <!-- Top Row -->
+        <div class="crypto-top">
+            <div class="crypto-cell coin">
+                <img id="coinImage" src="" alt="Enter" />
+                <div>
+                    <strong id="coinName"></strong>
+                    <span id="coinSymbol"></span>
+                </div>
+            </div>
 
-      <div class="crypto-chart">
-        <canvas id="priceChart"></canvas>
-      </div>
-    </div>
-  </section>
+            <div class="crypto-cell">
+                <span class="label">Price</span>
+                <strong id="coinPrice"></strong>
+            </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <span>Powered by CoinGecko API</span>
-    <span>© 2026 CryptoTrack</span>
-  </footer>
+            <div class="crypto-cell">
+                <span class="label">24h %</span>
+                <strong id="coinChange" class="positive"></strong>
+            </div>
+        </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="script.js"></script>
+        <!-- Bottom Row -->
+        <div class="crypto-bottom">
+            <div class="crypto-cell">
+                <span class="label">Market Cap</span>
+                <strong id="coinMarketCap"></strong>
+            </div>
+
+            <div class="crypto-chart">
+                <canvas id="priceChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>Powered by CoinGecko API</span>
+        <span>© 2026 CryptoTrack</span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
